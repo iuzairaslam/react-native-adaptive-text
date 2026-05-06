@@ -20,7 +20,9 @@
     "test": "jest",
     "test:example": "npm test --prefix example",
     "test:all": "npm test && npm test --prefix example",
-    "typescript": "tsc --noEmit -p tsconfig.json",
+    "commit": "git commit -F rnat-commit-msg.txt -c core.hooksPath=/dev/null",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "typescript": "npm run typecheck",
     "publish:npm": "npm publish --registry=https://registry.npmjs.org --access public",
     "publish:github": "npm publish --registry=https://npm.pkg.github.com"
   },

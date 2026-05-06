@@ -193,11 +193,11 @@ npm install react-native-adaptive-text
 
 #### GitHub Packages (optional)
 
-Use only if you consume the package from **GitHub Packages** under a scoped name (for example **`@iuzairaslam/react-native-adaptive-text`**).
+Use only if you publish or consume the package from **GitHub Packages** under a **scoped** name (replace **`your-org`** with your GitHub org or username).
 
 ```bash
-npm login --scope=@iuzairaslam --auth-type=legacy --registry=https://npm.pkg.github.com
-npm install @iuzairaslam/react-native-adaptive-text
+npm login --scope=@your-org --auth-type=legacy --registry=https://npm.pkg.github.com
+npm install @your-org/react-native-adaptive-text
 ```
 
 #### Local path (monorepo or sibling folder)
@@ -356,6 +356,15 @@ npm test         # library unit tests
 npm run test:all # library + example tests
 npm run typescript   # tsc --noEmit
 ```
+
+**Commit messages:** edit **`rnat-commit-msg.txt`** (subject + body at the top of the file), stage your changes, then either:
+
+```bash
+git add -A
+npm run commit
+```
+
+or `git commit -F rnat-commit-msg.txt -c core.hooksPath=/dev/null`. That reuses the same file each time and skips hooks that append unwanted `Co-authored-by:` trailers. Push as usual: `git push origin main`.
 
 ### Platform notes
 
