@@ -1,6 +1,6 @@
 {
   "name": "react-native-adaptive-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Picks a legible text color from a background (WCAG 2.1 + optional APCA). AdaptiveText, context theme, zero native code.",
   "main": "dist/index.js",
   "module": "dist/index.js",
