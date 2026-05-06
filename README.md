@@ -5,7 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![React Native](https://img.shields.io/badge/React_Native-0.71%2B-61dafb?logo=react)](https://reactnative.dev)
 
-![React Native Adaptive Text banner: text color shifts for contrast across dark and bright backgrounds](assets/readme_banner.png)
+![react-native-adaptive-text: intelligent text contrast for dark and light UI (React Native)](assets/readme_banner.png)
 
 Ever put text on a colored card and realize it’s **hard to read**, or you keep flipping between white and black by hand? **react-native-adaptive-text** does that thinking for you.
 
@@ -52,16 +52,7 @@ You’ll get a small sample app that walks through the main ideas (widget demo, 
   </tr>
 </table>
 
-**Image slots (same layout as `flutter_adaptive_text`):** add these files next to this README under **`assets/`**:
-
-| File | Role |
-|------|------|
-| `assets/readme_banner.png` | Wide cover under the badges |
-| `assets/demo_adaptive_text_widget.png` | Column 1 |
-| `assets/demo_palette_aware.png` | Column 2 |
-| `assets/demo_color_extension.png` | Column 3 |
-| `assets/demo_apca.png` | Column 4 |
-
+The **table** below uses iOS simulator captures from the **`example`** app (`assets/demo_*.png`).
 
 ## Use it in your own app
 
