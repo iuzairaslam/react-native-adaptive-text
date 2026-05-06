@@ -1,0 +1,77 @@
+{
+  "name": "react-native-adaptive-text",
+  "version": "1.0.0",
+  "description": "Picks a legible text color from a background (WCAG 2.1 + optional APCA). AdaptiveText, context theme, zero native code.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "test:example": "npm test --prefix example",
+    "test:all": "npm test && npm test --prefix example",
+    "typescript": "tsc --noEmit -p tsconfig.json",
+    "publish:npm": "npm publish --registry=https://registry.npmjs.org --access public",
+    "publish:github": "npm publish --registry=https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "react-native",
+    "react native",
+    "accessibility",
+    "a11y",
+    "wcag",
+    "wcag-2.1",
+    "contrast",
+    "contrast-ratio",
+    "apca",
+    "luminance",
+    "adaptive-text",
+    "adaptive-color",
+    "text-color",
+    "color",
+    "palette",
+    "typescript",
+    "expo",
+    "ios",
+    "android"
+  ],
+  "author": {
+    "name": "Muhammad Uzair Aslam",
+    "url": "https://github.com/iuzairaslam/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuzairaslam/react-native-adaptive-text.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "homepage": "https://github.com/iuzairaslam/react-native-adaptive-text#readme",
+  "bugs": {
+    "url": "https://github.com/iuzairaslam/react-native-adaptive-text/issues"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.71.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.2.55",
+    "jest": "^29.7.0",
+    "react": "18.2.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}
